@@ -1,5 +1,6 @@
 angular.module('app',[]);
 
+
 angular.module('app').controller('MainCtrl', function(){
 	var self = this;
 	self.message = 'Hello';
@@ -8,3 +9,5 @@ angular.module('app').controller('MainCtrl', function(){
 		self.message = message;
 	}
 });
+
+
