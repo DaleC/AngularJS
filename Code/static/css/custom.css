@@ -11,5 +11,17 @@
 }
 
 .col-max {
+    /* custom max width */
+    max-width:200px;
+
     word-wrap: break-word;
+}
+
+.container{
+	height: 100%; 
+	background: #FFCCCC;
+}
+
+.row{
+	padding: 1%;
 }

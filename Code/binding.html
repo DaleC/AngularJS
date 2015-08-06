@@ -19,22 +19,53 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"> </script>
 	</head>
 	<body> 
-		<div class="container" ng-app>
+		<div class="container" ng-app ng-init="message3='Hello'">
 			<div class="jumbotron text-center">
-				<h1>BINDING</h1>
+				<h1>AngularJS | BINDING</h1>
 			</div>
 
 			<div class="row row-centered">
 				<div class="col-md-4 col-centered" >
-					Bracket {{}} Binding:
+					<h3>
+						Bracket {{}} Binding:
+					</h3>
 				</div>
 				<div class="col-md-4 col-centered">
-					<input id="inputTBox"type="text" ng-model="message">
+					<input id="inputTBox" type="text" ng-model="message">
 				</div>
 				<div class="col-md-4 col-centered col-max">
 					<p> {{message}}</p>
 				</div>
 			</div>
+			<hr>
+			<div class="row row-centered">
+				<div class="col-md-4 col-centered" >
+					<h3>
+						Ng-bind Binding:
+					</h3>
+				</div>
+				<div class="col-md-4 col-centered">
+					<input id="inputTBox2" type="text" ng-model="message2">
+				</div>
+				<div class="col-md-4 col-centered col-max">
+					<p ng-bind="message2"> </p>
+				</div>
+			</div>
+			<hr>
+			<div class="row row-centered"> 
+				<div class="col-md-4 col-centered">
+					<h3>
+						One-time binding
+					</h3>
+				</div>
+				<div class="col-md-4 col-centered">
+					<input id="inputTBox3" type="text" ng-model="message3">
+				</div>
+				<div class="col-md-4 col-centered col-max">
+					<p ng-bind="message3"></p>
+				</div>
+			</div>
+			<hr>
 		</div>
 
 
