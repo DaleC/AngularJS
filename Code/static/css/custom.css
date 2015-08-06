@@ -1,0 +1,15 @@
+.row-centered {
+	text-align: center;
+}
+
+.col-centered {
+	display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    
+}
+
+.col-max {
+    word-wrap: break-word;
+}
